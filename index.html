@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SKYSENSE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background animated blobs (kept outside card) -->
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div class="bg-blob blob-3"></div>
+
+  <main class="app" id="app">
+    <header class="header">
+      <h1 class="app-title">SKYSENSE</h1>
+
+      <div class="controls">
+        <button id="themeToggle" class="control-btn" aria-label="Toggle dark / light">🌙</button>
+        <button id="styleToggle" class="control-btn" aria-label="Toggle UI style">⇄</button>
+      </div>
+    </header>
+
+    <section class="card" id="mainCard" aria-live="polite">
+      <!-- Search / Voice / Geolocate -->
+      <div class="top-row">
+        <div class="search-group">
+          <input id="cityInput" type="search" placeholder="Search city (e.g. London)" aria-label="City name" />
+          <button id="searchBtn" class="btn">Search</button>
+          <button id="voiceBtn" class="btn voice" title="Voice search">🎙️</button>
+          <button id="locBtn" class="btn loc" title="Use my location">📍</button>
+        </div>
+        <div class="toggle-row small">
+          <label class="small-label">Units</label>
+          <select id="unitSelect" aria-label="Select units">
+            <option value="metric">°C</option>
+            <option value="imperial">°F</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Loading shimmer -->
+      <div id="loader" class="loader hidden" role="status" aria-hidden="true">
+        <div class="shimmer"></div>
+      </div>
+
+      <!-- Weather display -->
+      <div class="weather-wrap">
+        <div class="weather-visual">
+          <div id="particleLayer" class="particle-layer" aria-hidden="true"></div>
+          <div id="weatherIcon" class="weather-icon"></div></div>
+
+        <div class="weather-info">
+          <div class="location-row">
+            <h2 id="cityName" class="city">—</h2>
+            <p id="timeLocal" class="time small muted">—</p>
+          </div>
+
+          <div class="temp-row">
+            <p id="temp" class="temp big">—</p>
+            <p id="desc" class="desc muted">—</p>
+          </div>
+
+          <div class="details-row">
+            <div class="detail">
+              <span class="label">Humidity</span>
+              <span id="humidity" class="value">—</span>
+            </div>
+            <div class="detail">
+              <span class="label">Wind</span>
+              <span id="wind" class="value">—</span>
+            </div>
+            <div class="detail">
+              <span class="label">Pressure</span>
+              <span id="pressure" class="value">—</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Forecast -->
+      <div class="forecast-wrap">
+        <h3 class="section-title">5-Day Forecast</h3>
+        <div id="forecastCards" class="forecast-cards" aria-live="polite"></div>
+      </div>
+
+      <!-- Error area -->
+      <div id="error" class="error" role="alert" aria-hidden="true"></div>
+    </section>
+
+    <footer class="footer">
+      <small class="muted">Built with OpenWeatherMap • Voice Search • Dynamic UI</small>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
