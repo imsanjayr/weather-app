@@ -1,4 +1,4 @@
-🌤️ Next-Level Weather App
+🌤️ SKYSENSE - A Weather App
 
 A fully animated, modern, responsive weather application built using HTML, CSS & Vanilla JavaScript — featuring animated SVG icons, live forecasts, themes, voice search, geolocation, background particles, and smooth UI transitions.
 
