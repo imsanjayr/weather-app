@@ -3,6 +3,7 @@
 A fully animated, modern, responsive weather application built using HTML, CSS & Vanilla JavaScript — featuring animated SVG icons, live forecasts, themes, voice search, geolocation, background particles, and smooth UI transitions.
 
 🚀 Features
+
 ✔ Live Weather Data
 
 Real-time weather using OpenWeather API
