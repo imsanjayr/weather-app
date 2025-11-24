@@ -55,15 +55,3 @@ OpenWeather REST API
 SVG animations
 
 SpeechRecognition API
-
-📦 Project Structure
-
-📁 next-level-weather-app
- ├── index.html
- ├── style.css
- ├── script.js
- ├── /assets
- │    ├── icons/
- │    ├── backgrounds/
- │    └── svg/
- └── README.md
