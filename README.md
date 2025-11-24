@@ -40,3 +40,50 @@ Theme toggle (Light/Dark)
 Neumorphism toggle
 
 Error handling & form validation
+
+🛠️ Technologies Used
+
+HTML5
+
+CSS3 (Glassmorphism + Neumorphism)
+
+JavaScript (ES6+)
+
+OpenWeather REST API
+
+SVG animations
+
+SpeechRecognition API
+
+📦 Project Structure
+
+📁 next-level-weather-app
+ ├── index.html
+ ├── style.css
+ ├── script.js
+ ├── /assets
+ │    ├── icons/
+ │    ├── backgrounds/
+ │    └── svg/
+ └── README.md
+
+🔧 Setup Instructions
+1. Clone the repo
+git clone https://github.com/YOUR_USERNAME/next-level-weather-app.git
+
+2. Generate an API key
+
+Create a free key at:
+https://openweathermap.org/api
+
+3. Open script.js and replace:
+const apiKey = "YOUR_API_KEY";
+
+4. Run locally
+
+Just open:
+
+index.html
+
+
+No backend needed!
